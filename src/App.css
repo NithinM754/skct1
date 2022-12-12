@@ -1,0 +1,130 @@
+/* .App {
+  color: black;
+}
+.navbar_container{
+  text-align: center;
+  color: brown;
+  background-color: black;
+  padding: 5px;
+  animation: infinite ;
+  background-image: url("https://as1.ftcdn.net/v2/jpg/04/55/96/72/1000_F_455967235_j6iovzSnMTuJkykRqXJXgZeedjYnXA7D.jpg");
+}
+.navbar_body{
+  text-align: center;
+  
+  background-position:center;
+  background-image: url("https://res.cloudinary.com/dmtzvxa53/image/upload/v1669714412/cld-sample-2.jpg");
+
+  height: fit-content;
+  background-repeat: no-repeat;
+  
+}
+.center
+{
+  padding:190px 620px;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+p {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 6rem;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: azure;
+}
+.App:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  background: url("https://res.cloudinary.com/dmtzvxa53/image/upload/v1669717037/Screenshot_20221129_154644_w4sk8l.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.wrapper {
+  max-width: 700px;
+  max-height: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.App .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+.App .description {
+  position: relative;
+  transform-origin: 0 0;
+  padding-left: 70%;
+}
+.App .description p {
+  transform: rotate(269deg);
+}
+.App .bottom {
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.7rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.App .bold {
+  font-weight: bold;
+}
+.App .search {
+  text-align: center;
+  padding: 0.7rem;
+}
+.App input {
+  padding: 0.7rem 1.5rem;
+  font-size: 0.8rem;
+  border-radius: 25px;
+  border: 1px solid azure;
+  background: rgba(255, 255, 255, 0.1);
+  color: azure;
+}
+::placeholder {
+  color: azure;
+}
+@media (max-width: 500px) {
+  .App .bottom {
+    padding: 0.8rem;
+    font-size: 0.4rem;
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+}
